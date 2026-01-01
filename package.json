@@ -1,0 +1,30 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "a clone of the app formerly known as twitter",
+  "homepage": "https://github.com/rauldevelops/twitter-clone#readme",
+  "bugs": {
+    "url": "https://github.com/rauldevelops/twitter-clone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauldevelops/twitter-clone.git"
+  },
+  "license": "ISC",
+  "author": "Raul Crespo",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.11"
+  }
+}
