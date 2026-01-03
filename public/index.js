@@ -1,4 +1,13 @@
-import { tweetsData } from '../data.js'
+try {
+    const response = await fetch('api/posts')
+    const data = await response.json()
+    return data
+} catch(err) {
+    console.error('Error fetching posts:', err)
+}
+
+console.log(data)
+
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 document.addEventListener('click', function(e){
@@ -150,4 +159,3 @@ function render(){
 }
 
 render()
-
